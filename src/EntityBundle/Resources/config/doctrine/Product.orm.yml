@@ -1,0 +1,27 @@
+EntityBundle\Entity\Product:
+    type: entity
+    table: null
+    repositoryClass: EntityBundle\Repository\ProductRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        category:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+            nullable: true
+        creationDate:
+            type: date
+            column: creation_date
+        code:
+            type: integer
+    lifecycleCallbacks: {  }

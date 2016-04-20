@@ -1,0 +1,16 @@
+entity_homepage:
+    path:     /
+    defaults: { _controller: EntityBundle:Default:index }
+
+products:
+        path:      /products
+        defaults:  { _controller: EntityBundle:CRUD:read}
+product:
+        path:      /product/create
+        defaults:  { _controller: EntityBundle:CRUD:create}
+product:
+        path:      /product/delete
+        defaults:  { _controller: EntityBundle:CRUD:delete}
+product:
+        path:      /product/update
+        defaults:  { _controller: EntityBundle:CRUD:update}
